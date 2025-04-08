@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "storage": {
+      "UserVPCSubnetDetails": [
+        "create",
+        "read"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

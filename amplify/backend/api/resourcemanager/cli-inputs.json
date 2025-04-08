@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/vpc": {
+      "name": "/vpc",
+      "lambdaFunction": "createVpcSubnetsLambdaFuntion",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/vpc/{name}": {
+      "name": "/vpc/{name}",
+      "lambdaFunction": "getVpcDetailsLambdaFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

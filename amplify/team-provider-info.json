@@ -1,0 +1,42 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-resourcemanager-dev-42387-authRole",
+      "UnauthRoleArn": "arn:aws:iam::112097210422:role/amplify-resourcemanager-dev-42387-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::112097210422:role/amplify-resourcemanager-dev-42387-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-resourcemanager-dev-42387-deployment",
+      "UnauthRoleName": "amplify-resourcemanager-dev-42387-unauthRole",
+      "StackName": "amplify-resourcemanager-dev-42387",
+      "StackId": "arn:aws:cloudformation:ap-south-1:112097210422:stack/amplify-resourcemanager-dev-42387/0e0c4c70-136f-11f0-9c16-025017df747b",
+      "AmplifyAppId": "d2peujg7zzovuo"
+    },
+    "categories": {
+      "auth": {
+        "resourcemanager": {}
+      },
+      "storage": {
+        "UserVPCSubnetDetails": {}
+      },
+      "function": {
+        "createVpcSubnetsLambdaFuntion": {
+          "deploymentBucketName": "amplify-resourcemanager-dev-42387-deployment",
+          "s3Key": "amplify-builds/createVpcSubnetsLambdaFuntion-4c5666576e7339313939-build.zip"
+        },
+        "getVpcDetailsLambdaFunction": {
+          "deploymentBucketName": "amplify-resourcemanager-dev-42387-deployment",
+          "s3Key": "amplify-builds/getVpcDetailsLambdaFunction-674d736d41475a325634-build.zip"
+        }
+      },
+      "api": {
+        "resourcemanager": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2peujg7zzovuo",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

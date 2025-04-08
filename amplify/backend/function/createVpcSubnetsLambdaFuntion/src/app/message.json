@@ -1,0 +1,16 @@
+{
+  "ENV_MISSING": "Environment variable '{var_name}' is required.",
+  "INTERNAL_SERVER_ERROR": "Internal server error due to {message}",
+  "VALIDATION_ERROR": "Input validation failed.",
+  "AUTH_USER_MISSING": "In request '{message}'",
+  "FIELD_REQUIRED": "Missing required field: {field}",
+  "INVALID_VPC_NAME": "vpcName must be a non-empty string.",
+  "INVALID_REGION": "Region '{region}' is not valid. Allowed regions are: {allowed_regions}.",
+  "INVALID_CIDR": "cidr '{cidr}' is not a valid CIDR block.",
+  "EMPTY_SUBNETS": "subnets must be a non-empty list.",
+  "INVALID_SUBNET_NAME": "subnetName in subnet #{index} must be a non-empty string.",
+  "INVALID_SUBNET_CIDR": "cidr '{cidr}' in subnet #{index} is not a valid CIDR block.",
+  "SUBNET_NOT_IN_VPC": "Subnet cidr '{subnet_cidr}' in subnet #{index} is not within VPC cidr '{vpc_cidr}'.",
+  "INVALID_AVAILABILITY_ZONE": "availabilityZone '{az}' in subnet #{index} does not belong to region '{region}'.",
+  "VPC_EXISTED": "VPC found with the name {vpc_name}. So, please give different vpcName"
+}

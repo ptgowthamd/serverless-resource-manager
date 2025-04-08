@@ -1,0 +1,37 @@
+{
+  "resourceName": "UserVPCSubnetDetails",
+  "tableName": "UserVPCSubnetDetails",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "creation_datetime",
+    "fieldType": "number"
+  },
+  "gsi": [
+    {
+      "name": "user_id-creation_datetime-index",
+      "partitionKey": {
+        "fieldName": "user_id",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "creation_datetime",
+        "fieldType": "number"
+      }
+    },
+    {
+      "name": "vpc_name-creation_datetime-index",
+      "partitionKey": {
+        "fieldName": "vpc_name",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "creation_datetime",
+        "fieldType": "number"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}
