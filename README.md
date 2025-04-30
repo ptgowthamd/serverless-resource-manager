@@ -330,7 +330,7 @@ Two GSIs are defined to facilitate efficient querying based on either the user o
 
 - **Frontend Application details:***
 
-  URL to access hosted frontend application : https://dev.d2peujg7zzovuo.amplifyapp.com/
+  URL to access hosted frontend application for stag env: https://stagging.d2obkhn61dlalq.amplifyapp.com/
 
 ---
 
@@ -341,16 +341,26 @@ Two GSIs are defined to facilitate efficient querying based on either the user o
 
 ![AuthFlow Screenshot 01](./screenshots/AuthFlow01.png)
 
-![AuthFlow Screenshot 01](./screenshots/AuthFlow02.png)
+![AuthFlow Screenshot 02](./screenshots/AuthFlow02.png)
 
-![AuthFlow Screenshot 01](./screenshots/AuthFlow03.png)
+![AuthFlow Screenshot 03](./screenshots/AuthFlow03.png)
 
-![AuthFlow Screenshot 01](./screenshots/AuthFlow04.png)
+![AuthFlow Screenshot 04](./screenshots/AuthFlow04.png)
 
-![AuthFlow Screenshot 01](./screenshots/AuthFlow05.png)
+![AuthFlow Screenshot 05](./screenshots/AuthFlow05.png)
 
-![AuthFlow Screenshot 01](./screenshots/AuthFlow06.png)
+![AuthFlow Screenshot 06](./screenshots/AuthFlow06.png)
 
-![AuthFlow Screenshot 01](./screenshots/AuthFlow07.png)
+![AuthFlow Screenshot 07](./screenshots/AuthFlow07.png)
 
-![AuthFlow Screenshot 01](./screenshots/AuthFlow08.png)
+![AuthFlow Screenshot 08](./screenshots/AuthFlow08.png)
+
+![AuthFlow Screenshot 09](./screenshots/AuthFlow09.png)
+
+![AuthFlow Screenshot 10](./screenshots/AuthFlow10.png)
+
+![AuthFlow Screenshot 11](./screenshots/AuthFlow11.png)
+
+![AuthFlow Screenshot 12](./screenshots/AuthFlow12.png)
+
+![AuthFlow Screenshot 13](./screenshots/AuthFlow13.png)
