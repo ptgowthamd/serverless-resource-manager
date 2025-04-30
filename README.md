@@ -12,7 +12,7 @@
 10. [Example Request and Response for Create VPC & Subnets API Endpoint](#10-example-request-and-response-for-create-vpc--subnets-api-endpoint)
 11. [Example Request and Response for Get VPC & Subnets Details API Endpoint](#11-example-request-and-response-for-get-vpc--subnets-details-api-endpoint)
 12. [Deployed Amplify Application Details](#12-deployed-amplify-application-frontend-app-and-backend-api-details)
-13. [Testing API Endpoints](#13-testing-api-endpoints)
+13. [Testing API Endpoints and functionality through UI](#13-testing-api-endpoints)
 
 ### 1. About the Project:
 
