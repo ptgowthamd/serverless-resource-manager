@@ -334,7 +334,7 @@ Two GSIs are defined to facilitate efficient querying based on either the user o
 
 ---
 
-### 13. Testing API endpoints
+### 13. Testing API endpoints and functionality through UI
 
 - Follow the screenshots to register new user, verify user-email, login successfully to generate auth-tokens. Copy ID-token from browser inspect page -> Application tab -> Storage -> Local storage -> select FE app URL : then right side you can see generated cognito-auth-tokens.
 - Use this ID-token in header of API request as value to the Authorization key.
