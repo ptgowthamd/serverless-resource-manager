@@ -31,6 +31,11 @@ def query_vpc_record(table, vpc_name):
 # ----------------------- Lambda Handler -----------------------
 
 def handler(event, context):
+    cors_headers = {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET,PUT,DELETE'
+        }
     try:
         print(json.dumps(event))
         vpc_name = event['pathParameters']['name']
@@ -52,6 +57,7 @@ def handler(event, context):
 
         return {
             'statusCode': 200,
+            'headers': cors_headers,
             'body': json.dumps({
                 'message': message,
                 'vpc_subnets_details': items
@@ -62,6 +68,7 @@ def handler(event, context):
         print(f"Error: {error}")
         return {
             'statusCode': 500,
+            'headers': cors_headers,
             'body': json.dumps({
                 'message': 'Internal server error',
                 'error': str(error)

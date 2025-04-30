@@ -16,6 +16,13 @@ def default_converter(o):
 
 @handle_exception
 def handler(event, context):
+
+    cors_headers = {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Methods': 'OPTIONS,POST,GET,PUT,DELETE'
+        }
+
     print(json.dumps(event))
     print(json.dumps(event["headers"]))
     print(json.dumps(json.loads(event["body"])))
@@ -61,16 +68,19 @@ def handler(event, context):
 
     # Create VPC and subnets
     vpc_id = vpc_service.create_vpc(ec2, vpc_cidr, vpc_name)
+
+    context.vpc_id      = vpc_id
+    context.ec2_client  = ec2
     
     subnets_details = []
-    try:
-        for subnet in subnets:
-            details = vpc_service.create_subnet(ec2, vpc_id, subnet)
-            subnets_details.append(details)
-    except Exception as e:
-        print(f"Creation of subnets in VPC is failed. So, deleting this vpc ({vpc_id}) and subnets if any created")
-        vpc_service.delete_vpc_and_subnets(ec2, vpc_id)
-        raise # Re-raise the original exception
+    # try:
+    for subnet in subnets:
+        details = vpc_service.create_subnet(ec2, vpc_id, subnet)
+        subnets_details.append(details)
+    # except Exception as e:
+    #     print(f"Creation of subnets in VPC is failed. So, deleting this vpc ({vpc_id}) and subnets if any created")
+    #     vpc_service.delete_vpc_and_subnets(ec2, vpc_id)
+    #     raise # Re-raise the original exception
     
     # Record the VPC and subnet details in DynamoDB
     record_id = vpc_service.record_vpc_details(dynamodb, table_name, user_id, vpc_name, vpc_id, vpc_cidr, subnets_details)
@@ -80,6 +90,7 @@ def handler(event, context):
     
     return {
         'statusCode': 200,
+        'headers': cors_headers,
         'body': json.dumps({
             'message': f'VPC ({vpc_id}) and Subnets ({concatenated_subnet_ids}) created and recorded successfully.'
             }, default=default_converter)
