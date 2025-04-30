@@ -12,7 +12,7 @@
 10. [Example Request and Response for Create VPC & Subnets API Endpoint](#10-example-request-and-response-for-create-vpc--subnets-api-endpoint)
 11. [Example Request and Response for Get VPC & Subnets Details API Endpoint](#11-example-request-and-response-for-get-vpc--subnets-details-api-endpoint)
 12. [Deployed Amplify Application Details](#12-deployed-amplify-application-frontend-app-and-backend-api-details)
-13. [Testing API Endpoints and functionality through UI](#13-testing-api-endpoints)
+13. [Testing API endpoints through postman and testing functionality through UI](#13-testing-api-endpoints-through-postman-and-testing-functionality-through-ui)
 
 ### 1. About the Project:
 
@@ -334,7 +334,7 @@ Two GSIs are defined to facilitate efficient querying based on either the user o
 
 ---
 
-### 13. Testing API endpoints and functionality through UI
+### 13. Testing API endpoints through postman and testing functionality through UI
 
 - Follow the screenshots to register new user, verify user-email, login successfully to generate auth-tokens. Copy ID-token from browser inspect page -> Application tab -> Storage -> Local storage -> select FE app URL : then right side you can see generated cognito-auth-tokens.
 - Use this ID-token in header of API request as value to the Authorization key.
