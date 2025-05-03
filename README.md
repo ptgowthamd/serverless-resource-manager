@@ -13,6 +13,7 @@
 11. [Example Request and Response for Get VPC & Subnets Details API Endpoint](#11-example-request-and-response-for-get-vpc--subnets-details-api-endpoint)
 12. [Deployed Amplify Application Details](#12-deployed-amplify-application-frontend-app-and-backend-api-details)
 13. [Testing API endpoints through postman and testing functionality through UI](#13-testing-api-endpoints-through-postman-and-testing-functionality-through-ui)
+14. [Amplify CLI guide to create simple serverless application (amplify-cognito-serverless-rest-api)](#amplify-cli-guide-to-create-simple-serverless-application-(amplify-cognito-serverless-rest-api))
 
 ### 1. About the Project:
 
@@ -364,3 +365,9 @@ Two GSIs are defined to facilitate efficient querying based on either the user o
 ![AuthFlow Screenshot 12](./screenshots/AuthFlow12.png)
 
 ![AuthFlow Screenshot 13](./screenshots/AuthFlow13.png)
+
+---
+
+### 14. Amplify CLI guide to create simple serverless application (amplify-cognito-serverless-rest-api)
+
+[Documentation with example code](formatted_amplify-cognito-serverless-rest-api-setup_notes.md)
